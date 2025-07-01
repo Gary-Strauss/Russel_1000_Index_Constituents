@@ -1,0 +1,32 @@
+name: Update Russell 1000 Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Täglich um Mitternacht
+  workflow_dispatch:
+
+jobs:
+  update_data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Russell 1000 scraper
+        run: python russell1000_scraper.py
+
+      - name: Commit changes
+        run: |
+          git add data/russell1000_constituents.csv data/russell1000_constituents.json
+          git commit -m "Update Russell 1000 data - $(date)"
+          git push
