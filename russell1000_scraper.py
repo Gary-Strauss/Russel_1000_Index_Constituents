@@ -5,7 +5,7 @@ from io import StringIO
 import logging
 import os
 
-# Logging konfigurieren
+# Configure logging
 log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
 logging.basicConfig(level=getattr(logging, log_level), format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -15,48 +15,48 @@ def scrape_russell1000():
 
     try:
         response = requests.get(url, timeout=10)
-        response.raise_for_status()  # Wirft eine Exception bei HTTP-Fehlern
+        response.raise_for_status()  # Raises exception for HTTP errors
     except requests.exceptions.Timeout:
-        logging.error(f"Timeout beim Abrufen der URL: {url}")
+        logging.error(f"Timeout while fetching URL: {url}")
         raise
     except requests.exceptions.ConnectionError:
-        logging.error(f"Verbindungsfehler beim Abrufen der URL: {url}")
+        logging.error(f"Connection error while fetching URL: {url}")
         raise
     except requests.exceptions.RequestException as e:
-        logging.error(f"Fehler beim HTTP-Request: {e}")
+        logging.error(f"HTTP request error: {e}")
         raise
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Suche nach der "Components" Tabelle - versuche verschiedene Ansätze
+    # Search for the "Components" table - try different approaches
     table = None
     
-    # Versuche zuerst nach einer Tabelle mit "Components" im vorherigen Text zu suchen
+    # First try to search for a table with "Components" in the preceding text
     for heading in soup.find_all(['h2', 'h3']):
         if 'component' in heading.get_text().lower():
             table = heading.find_next('table')
             if table:
                 break
     
-    # Falls das nicht funktioniert, suche nach der größten wikitable
+    # If that doesn't work, search for the largest wikitable
     if not table:
         tables = soup.find_all('table', {'class': 'wikitable'})
         if tables:
-            # Nimm die größte Tabelle
+            # Take the largest table
             table = max(tables, key=lambda t: len(t.find_all('tr')))
 
     if not table:
-        raise ValueError("Keine geeignete Tabelle gefunden.")
+        raise ValueError("No suitable table found.")
 
-    logging.info(f"Tabelle gefunden mit {len(table.find_all('tr'))} Zeilen")
+    logging.info(f"Table found with {len(table.find_all('tr'))} rows")
 
-    # Extrahiere die Daten mit StringIO um die FutureWarning zu vermeiden
+    # Extract data with StringIO to avoid FutureWarning
     table_html = str(table)
     df = pd.read_html(StringIO(table_html))[0]
 
-    logging.info(f"DataFrame erstellt mit {len(df)} Zeilen und Spalten: {list(df.columns)}")
+    logging.info(f"DataFrame created with {len(df)} rows and columns: {list(df.columns)}")
 
-    # Spalten umbenennen - flexibler Ansatz
+    # Rename columns - flexible approach
     column_mapping = {}
     for col in df.columns:
         col_lower = str(col).lower()
@@ -69,25 +69,42 @@ def scrape_russell1000():
         elif 'sub' in col_lower and 'industry' in col_lower:
             column_mapping[col] = 'GICS_Sub_Industry'
 
-    logging.info(f"Spalten-Mapping: {column_mapping}")
+    logging.info(f"Column mapping: {column_mapping}")
     df.rename(columns=column_mapping, inplace=True)
 
-    # Validierung - weniger strikt
+    # Validation - less strict
     if len(df) < 100:
-        raise ValueError(f"Die Anzahl der Unternehmen ({len(df)}) ist verdächtig niedrig.")
+        raise ValueError(f"The number of companies ({len(df)}) is suspiciously low.")
 
-    logging.info(f"Validierung erfolgreich: {len(df)} Unternehmen gefunden")
+    logging.info(f"Validation successful: {len(df)} companies found")
 
-    # Erstelle data Verzeichnis falls es nicht existiert
-    os.makedirs('data', exist_ok=True)
+    # Create data directory if it doesn't exist
+    try:
+        os.makedirs('data', exist_ok=True)
+        logging.info("Data directory created or already exists")
+    except OSError as e:
+        logging.error(f"Failed to create data directory: {e}")
+        raise
 
-    # Speichern der Daten
+    # Save the data
     csv_filename = "data/russell1000_constituents.csv"
     json_filename = "data/russell1000_constituents.json"
-    df.to_csv(csv_filename, index=False)
-    df.to_json(json_filename, orient='records')
+    
+    try:
+        df.to_csv(csv_filename, index=False)
+        logging.info(f"Data successfully saved to {csv_filename}")
+    except (OSError, IOError, PermissionError) as e:
+        logging.error(f"Failed to save CSV file {csv_filename}: {e}")
+        raise
+    
+    try:
+        df.to_json(json_filename, orient='records')
+        logging.info(f"Data successfully saved to {json_filename}")
+    except (OSError, IOError, PermissionError) as e:
+        logging.error(f"Failed to save JSON file {json_filename}: {e}")
+        raise
 
-    logging.info(f"Die Daten wurden erfolgreich in {csv_filename} und {json_filename} gespeichert.")
+    logging.info(f"Data successfully saved to both {csv_filename} and {json_filename}")
 
 
 if __name__ == '__main__':
