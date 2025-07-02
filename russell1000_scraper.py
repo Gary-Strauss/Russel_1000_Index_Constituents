@@ -13,7 +13,8 @@ logging.basicConfig(level=getattr(logging, log_level), format='%(asctime)s - %(l
 def fetch_webpage(url):
     """Fetch webpage content and return BeautifulSoup object."""
     try:
-        response = requests.get(url, timeout=10)
+        headers = {'User-Agent': 'Russell1000-Scraper/1.0 (Educational Purpose)'}
+        response = requests.get(url, timeout=10, headers=headers)
         response.raise_for_status()  # Raises exception for HTTP errors
     except requests.exceptions.Timeout:
         logging.error(f"Timeout while fetching URL: {url}")
