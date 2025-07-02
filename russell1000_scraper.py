@@ -2,6 +2,11 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 from io import StringIO
+import logging
+import os
+
+# Logging konfigurieren
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def scrape_russell1000():
     url = "https://en.wikipedia.org/wiki/Russell_1000_Index"
@@ -28,13 +33,13 @@ def scrape_russell1000():
     if not table:
         raise ValueError("Keine geeignete Tabelle gefunden.")
 
-    print(f"Tabelle gefunden mit {len(table.find_all('tr'))} Zeilen")
+    logging.info(f"Tabelle gefunden mit {len(table.find_all('tr'))} Zeilen")
 
     # Extrahiere die Daten mit StringIO um die FutureWarning zu vermeiden
     table_html = str(table)
     df = pd.read_html(StringIO(table_html))[0]
 
-    print(f"DataFrame erstellt mit {len(df)} Zeilen und Spalten: {list(df.columns)}")
+    logging.info(f"DataFrame erstellt mit {len(df)} Zeilen und Spalten: {list(df.columns)}")
 
     # Spalten umbenennen - flexibler Ansatz
     column_mapping = {}
@@ -49,17 +54,16 @@ def scrape_russell1000():
         elif 'sub' in col_lower and 'industry' in col_lower:
             column_mapping[col] = 'GICS_Sub_Industry'
 
-    print(f"Spalten-Mapping: {column_mapping}")
+    logging.info(f"Spalten-Mapping: {column_mapping}")
     df.rename(columns=column_mapping, inplace=True)
 
     # Validierung - weniger strikt
     if len(df) < 100:
         raise ValueError(f"Die Anzahl der Unternehmen ({len(df)}) ist verdächtig niedrig.")
 
-    print(f"Validierung erfolgreich: {len(df)} Unternehmen gefunden")
+    logging.info(f"Validierung erfolgreich: {len(df)} Unternehmen gefunden")
 
     # Erstelle data Verzeichnis falls es nicht existiert
-    import os
     os.makedirs('data', exist_ok=True)
 
     # Speichern der Daten
@@ -68,7 +72,7 @@ def scrape_russell1000():
     df.to_csv(csv_filename, index=False)
     df.to_json(json_filename, orient='records')
 
-    print(f"Die Daten wurden erfolgreich in {csv_filename} und {json_filename} gespeichert.")
+    logging.info(f"Die Daten wurden erfolgreich in {csv_filename} und {json_filename} gespeichert.")
 
 if __name__ == '__main__':
     scrape_russell1000()
