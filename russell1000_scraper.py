@@ -43,7 +43,7 @@ def scrape_russell1000():
         if 'company' in col_lower or 'name' in col_lower:
             column_mapping[col] = 'Company'
         elif 'symbol' in col_lower or 'ticker' in col_lower:
-            column_mapping[col] = 'Ticker'
+            column_mapping[col] = 'Symbol'
         elif 'sector' in col_lower and 'sub' not in col_lower:
             column_mapping[col] = 'GICS_Sector'
         elif 'sub' in col_lower and 'industry' in col_lower:
