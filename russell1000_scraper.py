@@ -10,9 +10,8 @@ log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
 logging.basicConfig(level=getattr(logging, log_level), format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def scrape_russell1000():
-    url = "https://en.wikipedia.org/wiki/Russell_1000_Index"
-
+def fetch_webpage(url):
+    """Fetch webpage content and return BeautifulSoup object."""
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()  # Raises exception for HTTP errors
@@ -25,9 +24,12 @@ def scrape_russell1000():
     except requests.exceptions.RequestException as e:
         logging.error(f"HTTP request error: {e}")
         raise
+    
+    return BeautifulSoup(response.text, 'html.parser')
 
-    soup = BeautifulSoup(response.text, 'html.parser')
 
+def find_russell_table(soup):
+    """Find and extract the Russell 1000 components table from the webpage."""
     # Search for the "Components" table - try different approaches
     table = None
     
@@ -55,7 +57,12 @@ def scrape_russell1000():
     df = pd.read_html(StringIO(table_html))[0]
 
     logging.info(f"DataFrame created with {len(df)} rows and columns: {list(df.columns)}")
+    
+    return df
 
+
+def process_dataframe(df):
+    """Clean and rename DataFrame columns."""
     # Rename columns - flexible approach
     column_mapping = {}
     for col in df.columns:
@@ -71,13 +78,21 @@ def scrape_russell1000():
 
     logging.info(f"Column mapping: {column_mapping}")
     df.rename(columns=column_mapping, inplace=True)
+    
+    return df
 
+
+def validate_data(df):
+    """Validate the extracted data."""
     # Validation - less strict
     if len(df) < 100:
         raise ValueError(f"The number of companies ({len(df)}) is suspiciously low.")
 
     logging.info(f"Validation successful: {len(df)} companies found")
 
+
+def save_data(df):
+    """Save DataFrame to CSV and JSON files."""
     # Create data directory if it doesn't exist
     try:
         os.makedirs('data', exist_ok=True)
@@ -105,6 +120,26 @@ def scrape_russell1000():
         raise
 
     logging.info(f"Data successfully saved to both {csv_filename} and {json_filename}")
+
+
+def scrape_russell1000():
+    """Main function to orchestrate the Russell 1000 scraping process."""
+    url = "https://en.wikipedia.org/wiki/Russell_1000_Index"
+    
+    # Fetch webpage
+    soup = fetch_webpage(url)
+    
+    # Find and extract table
+    df = find_russell_table(soup)
+    
+    # Process DataFrame
+    df = process_dataframe(df)
+    
+    # Validate data
+    validate_data(df)
+    
+    # Save data
+    save_data(df)
 
 
 if __name__ == '__main__':
