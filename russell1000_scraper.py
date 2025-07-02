@@ -76,5 +76,10 @@ def scrape_russell1000():
 
     logging.info(f"Die Daten wurden erfolgreich in {csv_filename} und {json_filename} gespeichert.")
 
+
 if __name__ == '__main__':
-    scrape_russell1000()
+    try:
+        scrape_russell1000()
+    except Exception as e:
+        logging.error(f"Scraping failed: {e}")
+        raise
