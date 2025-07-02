@@ -12,7 +12,20 @@ logging.basicConfig(level=getattr(logging, log_level), format='%(asctime)s - %(l
 
 def scrape_russell1000():
     url = "https://en.wikipedia.org/wiki/Russell_1000_Index"
-    response = requests.get(url)
+
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()  # Wirft eine Exception bei HTTP-Fehlern
+    except requests.exceptions.Timeout:
+        logging.error(f"Timeout beim Abrufen der URL: {url}")
+        raise
+    except requests.exceptions.ConnectionError:
+        logging.error(f"Verbindungsfehler beim Abrufen der URL: {url}")
+        raise
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Fehler beim HTTP-Request: {e}")
+        raise
+
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # Suche nach der "Components" Tabelle - versuche verschiedene Ansätze
