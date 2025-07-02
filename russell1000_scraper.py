@@ -6,7 +6,9 @@ import logging
 import os
 
 # Logging konfigurieren
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
+logging.basicConfig(level=getattr(logging, log_level), format='%(asctime)s - %(levelname)s - %(message)s')
+
 
 def scrape_russell1000():
     url = "https://en.wikipedia.org/wiki/Russell_1000_Index"
