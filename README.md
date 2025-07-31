@@ -32,29 +32,6 @@ Die Daten enthalten die folgenden Spalten:
 
 ---
 
-## 🚀 Lokale Ausführung
-
-Um den Scraper lokal auszuführen, befolge diese Schritte:
-
-1.  **Repository klonen:**
-    ```bash
-    git clone [https://github.com/Gary-Strauss/Gary-Strauss.git](https://github.com/Gary-Strauss/Gary-Strauss.git)
-    cd Gary-Strauss
-    ```
-
-2.  **Abhängigkeiten installieren:** (Es wird empfohlen, eine virtuelle Umgebung zu verwenden)
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Scraper ausführen:**
-    ```bash
-    python russell1000_scraper.py
-    ```
-    Nach der Ausführung findest du die aktualisierten `csv`- und `json`-Dateien im `data/`-Verzeichnis.
-
----
-
 ## 🤖 Automatisierung
 
 Ein GitHub Actions Workflow, definiert in `.github/workflows/update-russell1000.yml`, automatisiert den Scraping-Prozess.
@@ -67,6 +44,29 @@ Ein GitHub Actions Workflow, definiert in `.github/workflows/update-russell1000.
     4.  Überprüft, ob die Daten sich geändert haben.
     5.  Falls ja, werden die neuen Daten-Dateien automatisch in das Repository committet und gepusht.
 * **Manuelle Ausführung:** Der Workflow kann auch jederzeit manuell über den "Actions"-Tab des Repositories gestartet werden.
+
+---
+
+## 🚀 Lokale Ausführung
+
+Um den Scraper lokal auszuführen, befolge diese Schritte:
+
+1.  **Repository klonen:**
+    ```bash
+    git clone [https://github.com/Gary-Strauss/Russel_1000_Index_Constituents.git](https://github.com/Gary-Strauss/Russel_1000_Index_Constituents.git)
+    cd Russel_1000_Index_Constituents
+    ```
+
+2.  **Abhängigkeiten installieren:** (Es wird empfohlen, eine virtuelle Umgebung zu verwenden)
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Scraper ausführen:**
+    ```bash
+    python russell1000_scraper.py
+    ```
+    Nach der Ausführung findest du die aktualisierten `csv`- und `json`-Dateien im `data/`-Verzeichnis.
 
 ---
 
