@@ -65,6 +65,7 @@ Amkor Technology,AMKR,Information Technology,Semiconductors
 Amphenol,APH,Information Technology,Electronic Components
 Analog Devices,ADI,Information Technology,Semiconductors
 Angi Inc.,ANGI,Communication Services,Advertising
+AngloGold Ashanti,AU,Materials,Gold
 Annaly Capital Management,NLY,Financials,
 Ansys,ANSS,Information Technology,Application Software
 Antero Midstream,AM,Energy,
@@ -92,10 +93,12 @@ Ashland Global,ASH,Materials,Diversified Chemicals
 Assurant,AIZ,Financials,Multi-line Insurance
 Assured Guaranty,AGO,Financials,
 Astera Labs,ALAB,Information Technology,Semiconductors
+AST SpaceMobile,ASTS,Communication Services,Wireless Telecommunication Services
 AT&T,T,Communication Services,Integrated Telecommunication Services
 ATI Inc.,ATI,Industrials,Aerospace & Defense
 Atlassian,TEAM,Information Technology,Application Software
 Atmos Energy,ATO,Utilities,Gas Utilities
+Aurora Innovation,AUR,Information Technology,
 Autodesk,ADSK,Information Technology,Application Software
 Automatic Data Processing,ADP,Industrials,Human Resource & Employment Services
 AutoNation,AN,Consumer Discretionary,Automotive Retail
@@ -354,6 +357,7 @@ Everus Construction Group,ECG,Industrials,Construction & Engineering
 Exact Sciences,EXAS,Health Care,
 Exelixis,EXEL,Health Care,Biotechnology
 Exelon,EXC,Utilities,Multi-Utilities
+EXL Service,EXLS,Industrials,Data Processing & Outsourced Services
 Expand Energy,EXE,Energy,Oil & Gas Exploration & Production
 Expedia Group,EXPE,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
 Expeditors International,EXPD,Industrials,Air Freight & Logistics
@@ -379,9 +383,11 @@ FirstEnergy,FE,Utilities,Electric Utilities
 Fiserv,FI,Financials,Transaction & Payment Processing Services
 Five Below,FIVE,Consumer Discretionary,Other Specialty Retail
 Five9,FIVN,Information Technology,
+Flex Ltd.,FLEX,Information Technology,Electronic Manufacturing Services
 Floor & Decor,FND,Consumer Discretionary,Home Improvement Retail
 Flowers Foods,FLO,Consumer Staples,Packaged Foods & Meats
 Flowserve,FLS,Industrials,Industrial Machinery & Supplies & Components
+Flutter Entertainment,FLUT,Consumer Discretionary,Casinos & Gaming
 FMC Corporation,FMC,Materials,Fertilizers & Agricultural Chemicals
 FNB Corporation,FNB,Financials,Regional Banks
 Ford Motor Company,F,Consumer Discretionary,Automobile Manufacturers
@@ -392,10 +398,12 @@ Fortune Brands Innovations,FBIN,Industrials,Building Products
 Fox Corporation (Class A),FOXA,Communication Services,Movies & Entertainment
 Fox Corporation (Class B),FOX,Communication Services,Movies & Entertainment
 Franklin Templeton Investments,BEN,Financials,Asset Management & Custody Banks
+Freedom Holding,FRHC,Financials,
 Freeport-McMoRan,FCX,Materials,Copper
 Freshpet,FRPT,Consumer Staples,
 Frontier Communications,FYBR,Communication Services,
 Frost Bank,CFR,Financials,Regional Banks
+FTAI Aviation,FTAI,Industrials,
 FTI Consulting,FCN,Industrials,Research & Consulting Services
 GameStop,GME,Consumer Discretionary,Computer & Electronics Retail
 Gaming and Leisure Properties,GLPI,Real Estate,
@@ -431,6 +439,7 @@ Grocery Outlet,GO,Consumer Staples,Food Retail
 Guidewire Software,GWRE,Information Technology,
 GXO Logistics,GXO,Industrials,Air Freight & Logistics
 Halliburton,HAL,Energy,Oil & Gas Equipment & Services
+Hamilton Lane,HLNE,Financials,
 Hanover Insurance,THG,Financials,Property & Casualty Insurance
 Harley-Davidson,HOG,Consumer Discretionary,Motorcycle Manufacturers
 Hartford (The),HIG,Financials,Property & Casualty Insurance
@@ -496,6 +505,7 @@ Iron Mountain,IRM,Real Estate,Other Specialized REITs
 ITT Inc.,ITT,Industrials,Industrial Machinery & Supplies & Components
 Jabil,JBL,Information Technology,Electronic Manufacturing Services
 Jacobs Solutions,J,Industrials,Construction & Engineering
+James Hardie Industries,JHX,Materials,
 Janus Henderson,JHG,Financials,Asset Management & Custody Banks
 Jazz Pharmaceuticals,JAZZ,Health Care,Pharmaceuticals
 J. B. Hunt,JBHT,Industrials,Cargo Ground Transportation
@@ -504,6 +514,7 @@ Johnson & Johnson,JNJ,Health Care,Pharmaceuticals
 Johnson Controls,JCI,Industrials,Building Products
 Jones Lang LaSalle,JLL,Real Estate,Real Estate Services
 JPMorgan Chase,JPM,Financials,Diversified Banks
+Karman Holdings,KRMN,Industrials,
 "KBR, Inc.",KBR,Industrials,Diversified Support Services
 Kellanova,K,Consumer Staples,Packaged Foods & Meats
 Kemper Corporation,KMPR,Financials,Multi-line Insurance
@@ -625,6 +636,7 @@ Morgan Stanley,MS,Financials,Investment Banking & Brokerage
 Mosaic Company (The),MOS,Materials,Fertilizers & Agricultural Chemicals
 Motorola Solutions,MSI,Information Technology,Communications Equipment
 MP Materials,MP,Materials,Diversified Metals & Mining
+Mr. Cooper Group,COOP,Financials,Commercial & Residential Mortgage Finance
 MSA Safety,MSA,Industrials,Office Services & Supplies
 MSC Industrial Direct,MSM,Industrials,Trading Companies & Distributors
 MSCI,MSCI,Financials,Financial Exchanges & Data
@@ -672,6 +684,7 @@ Olin Corporation,OLN,Materials,Diversified Chemicals
 Ollie's Bargain Outlet,OLLI,Consumer Discretionary,General Merchandise Stores
 Omega Healthcare Investors,OHI,Real Estate,
 Omnicom Group,OMC,Communication Services,Advertising
+On Holding AG,ONON,Consumer Discretionary,Footwear
 ON Semiconductor,ON,Information Technology,Semiconductors
 OneMain Financial,OMF,Financials,
 Oneok,OKE,Energy,Oil & Gas Storage & Transportation
@@ -724,6 +737,7 @@ PPL Corporation,PPL,Utilities,Electric Utilities
 "Premier, Inc.",PINC,Health Care,
 T. Rowe Price,TROW,Financials,Asset Management & Custody Banks
 Primerica,PRI,Financials,Life & Health Insurance
+Primo Brands,PRMB,Consumer Staples,Soft Drinks & Non-alcoholic Beverages
 Principal Financial Group,PFG,Financials,Life & Health Insurance
 Procore,PCOR,Information Technology,
 Procter & Gamble,PG,Consumer Staples,Personal Care Products
@@ -744,6 +758,8 @@ Quanta Services,PWR,Industrials,Construction & Engineering
 QuantumScape,QS,Consumer Discretionary,
 Quest Diagnostics,DGX,Health Care,Health Care Services
 QuidelOrtho,QDEL,Health Care,Health Care Supplies
+"QXO, Inc.",QXO,Industrials,
+Ralliant,RAL,Information Technology,
 Ralph Lauren Corporation,RL,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
 Range Resources,RRC,Energy,Oil & Gas Exploration & Production
 Raymond James Financial,RJF,Financials,Investment Banking & Brokerage
@@ -751,6 +767,7 @@ Rayonier,RYN,Real Estate,Timber REITs
 RB Global,RBA,Industrials,
 RBC Bearings,RBC,Industrials,
 Realty Income,O,Real Estate,Retail REITs
+Reddit,RDDT,Communication Services,Interactive Media & Services
 Regal Rexnord,RRX,Industrials,Electrical Components & Equipment
 Regency Centers,REG,Real Estate,Retail REITs
 Regeneron Pharmaceuticals,REGN,Health Care,Biotechnology
@@ -761,6 +778,7 @@ RenaissanceRe,RNR,Financials,Reinsurance
 Repligen,RGEN,Health Care,Biotechnology
 Republic Services,RSG,Industrials,Environmental & Facilities Services
 Resmed,RMD,Health Care,Health Care Equipment
+Revolution Medicines,RVMD,Health Care,
 Revvity,RVTY,Health Care,Health Care Equipment
 Rexford Industrial,REXR,Real Estate,
 Reynolds Consumer Products,REYN,Consumer Staples,
@@ -784,6 +802,7 @@ Royal Gold,RGLD,Materials,Precious Metals & Minerals
 Royalty Pharma,RPRX,Health Care,
 RPM International,RPM,Materials,Specialty Chemicals
 RTX Corporation,RTX,Industrials,Aerospace & Defense
+Rubrik,RBRK,Information Technology,
 Ryan Specialty,RYAN,Financials,
 Ryder,R,Industrials,Cargo Ground Transportation
 S&P Global,SPGI,Financials,Financial Exchanges & Data
@@ -829,6 +848,7 @@ Sonoco,SON,Materials,Paper & Plastic Packaging Products & Materials
 Sotera Health,SHC,Health Care,
 Southern Company,SO,Utilities,Electric Utilities
 Southern Copper,SCCO,Materials,
+SouthState Corporation,SSB,Financials,Regional Banks
 Southwest Airlines,LUV,Industrials,Passenger Airlines
 Spectrum Brands,SPB,Consumer Staples,
 Spirit AeroSystems,SPR,Industrials,
@@ -844,6 +864,7 @@ Steel Dynamics,STLD,Materials,Steel
 Steris,STE,Health Care,Health Care Equipment
 Stifel,SF,Financials,Investment Banking & Brokerage
 Stryker Corporation,SYK,Health Care,Health Care Equipment
+Summit Therapeutics,SMMT,Health Care,
 Sun Communities,SUI,Real Estate,
 Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals"
 Synchrony Financial,SYF,Financials,Consumer Finance
@@ -852,6 +873,7 @@ Synovus,SNV,Financials,Regional Banks
 Sysco,SYY,Consumer Staples,Food Distributors
 T-Mobile US,TMUS,Communication Services,Wireless Telecommunication Services
 Take-Two Interactive,TTWO,Communication Services,Interactive Home Entertainment
+Talen Energy,TLN,Utilities,Independent Power Producers & Energy Traders
 "Tapestry, Inc.",TPR,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
 Targa Resources,TRGP,Energy,Oil & Gas Storage & Transportation
 Target Corporation,TGT,Consumer Staples,Consumer Staples Merchandise Retail
@@ -859,6 +881,7 @@ TD Synnex,SNX,Information Technology,Technology Distributors
 TechnipFMC,FTI,Energy,Oil & Gas Equipment & Services
 Teledyne Technologies,TDY,Industrials,Aerospace & Defense
 Teleflex,TFX,Health Care,Health Care Equipment
+Tempus AI,TEM,Health Care,
 Tenet Healthcare,THC,Health Care,Health Care Facilities
 Teradata,TDC,Information Technology,IT Consulting & Other Services
 Teradyne,TER,Information Technology,Semiconductor Materials & Equipment
@@ -935,6 +958,7 @@ Vestis,VSTS,Consumer Discretionary,
 VF Corporation,VFC,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
 Viatris,VTRS,Health Care,Pharmaceuticals
 Vici Properties,VICI,Real Estate,Hotel & Resort REITs
+Viking Holdings,VIK,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
 Viking Therapeutics,VKTX,Health Care,Biotechnology
 Viper Energy,VNOM,Energy,Oil & Gas Storage & Transportation
 Virtu Financial,VIRT,Financials,
