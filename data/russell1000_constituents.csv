@@ -10,7 +10,6 @@ Accenture,ACN,Information Technology,IT Consulting & Other Services
 Acuity Brands,AYI,Industrials,Electrical Components & Equipment
 Adobe Inc.,ADBE,Information Technology,Application Software
 ADT Inc.,ADT,Consumer Discretionary,
-Advance Auto Parts,AAP,Consumer Discretionary,Automotive Retail
 Advanced Drainage Systems,WMS,Industrials,
 Advanced Micro Devices,AMD,Information Technology,Semiconductors
 AECOM,ACM,Industrials,Construction & Engineering
@@ -64,10 +63,8 @@ Amgen,AMGN,Health Care,Biotechnology
 Amkor Technology,AMKR,Information Technology,Semiconductors
 Amphenol,APH,Information Technology,Electronic Components
 Analog Devices,ADI,Information Technology,Semiconductors
-Angi Inc.,ANGI,Communication Services,Advertising
 AngloGold Ashanti,AU,Materials,Gold
 Annaly Capital Management,NLY,Financials,
-Ansys,ANSS,Information Technology,Application Software
 Antero Midstream,AM,Energy,
 Antero Resources,AR,Energy,
 AON,AON,Financials,Insurance Brokers
@@ -77,6 +74,7 @@ Apellis Pharmaceuticals,APLS,Health Care,Biotechnology
 Apollo Global Management,APO,Financials,Asset Management & Custody Banks
 AppFolio,APPF,Information Technology,Application Software
 Apple Inc.,AAPL,Information Technology,"Technology Hardware, Storage & Peripherals"
+Applied Industrial Technologies,AIT,Industrials,Trading Companies & Distributors
 Applied Materials,AMAT,Information Technology,Semiconductor Materials & Equipment
 AppLovin,APP,Information Technology,Application Software
 AptarGroup,ATR,Materials,"Metal, Glass & Plastic Containers"
@@ -111,7 +109,6 @@ Avnet,AVT,Information Technology,Technology Distributors
 Axalta,AXTA,Materials,
 AXIS Capital,AXS,Financials,
 Axon Enterprise,AXON,Industrials,Aerospace & Defense
-Azek,AZEK,Industrials,
 Azenta,AZTA,Health Care,Life Sciences Tools & Services
 Baker Hughes,BKR,Energy,Oil & Gas Equipment & Services
 Ball Corporation,BALL,Materials,"Metal, Glass & Plastic Containers"
@@ -151,6 +148,7 @@ Bristol Myers Squibb,BMY,Health Care,Health Care Distributors
 Brixmor Property Group,BRX,Real Estate,Retail REITs
 Broadcom,AVGO,Information Technology,Semiconductors
 Broadridge Financial Solutions,BR,Industrials,Data Processing & Outsourced Services
+Brookfield Asset Management,BAM,Financials,Asset Management & Custody Banks
 Brookfield Renewable Partners,BEPC,Utilities,
 Brown & Brown,BRO,Financials,Insurance Brokers
 Brown–Forman (Class A),BF.A,Consumer Staples,Distillers & Vintners
@@ -169,14 +167,13 @@ Caesars Entertainment,CZR,Consumer Discretionary,Casinos & Gaming
 Camden Property Trust,CPT,Real Estate,Residential REITs
 Campbell Soup Company,CPB,Consumer Staples,Packaged Foods & Meats
 Capital One,COF,Financials,Consumer Finance
-Capri Holdings,CPRI,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
 Cardinal Health,CAH,Health Care,Health Care Distributors
 Carlisle Companies,CSL,Industrials,Industrial Conglomerates
 Carlyle Group (The),CG,Financials,
 CarMax,KMX,Consumer Discretionary,Automotive Retail
 Carnival Corporation & plc,CCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
+Carpenter Technology Corporation,CRS,Materials,Steel
 Carrier Global,CARR,Industrials,Building Products
-Carter's,CRI,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
 Carvana,CVNA,Consumer Discretionary,Automotive Retail
 Casey's,CASY,Consumer Staples,Food Retail
 Caterpillar Inc.,CAT,Industrials,Construction Machinery & Heavy Transportation Equipment
@@ -196,9 +193,9 @@ Charles River Laboratories,CRL,Health Care,Life Sciences Tools & Services
 Charles Schwab Corporation,SCHW,Financials,Investment Banking & Brokerage
 Charter Communications,CHTR,Communication Services,Cable & Satellite
 Chemed Corporation,CHE,Health Care,Health Care Services
-Chemours,CC,Materials,Diversified Chemicals
 Cheniere Energy,LNG,Energy,
 Chevron Corporation,CVX,Energy,Integrated Oil & Gas
+Chewy,CHWY,Consumer Discretionary,Other Specialty Retail
 Chipotle Mexican Grill,CMG,Consumer Discretionary,Restaurants
 Choice Hotels,CHH,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
 Chord Energy,CHRD,Energy,Oil & Gas Exploration & Production
@@ -247,7 +244,8 @@ Constellation Brands,STZ,Consumer Staples,Distillers & Vintners
 Constellation Energy,CEG,Utilities,Multi-Utilities
 Cooper Companies (The),COO,Health Care,Health Care Supplies
 Copart,CPRT,Industrials,Diversified Support Services
-Core & Main,CNM,Industrials,
+Corcept Therapeutics,CORT,Health Care,Pharmaceuticals
+Core & Main,CNM,Industrials,Trading Companies & Distributors
 Corning Inc.,GLW,Information Technology,Electronic Components
 Corpay,CPAY,Financials,Transaction & Payment Processing Services
 Corteva,CTVA,Materials,Fertilizers & Agricultural Chemicals
@@ -329,7 +327,6 @@ Elevance Health,ELV,Health Care,Managed Health Care
 Emcor,EME,Industrials,Construction & Engineering
 Emerson Electric,EMR,Industrials,Electrical Components & Equipment
 Encompass Health,EHC,Health Care,Health Care Facilities
-Enovis,ENOV,Health Care,Health Care Equipment
 Enphase Energy,ENPH,Information Technology,Electronic Components
 Entegris,ENTG,Information Technology,
 Entergy,ETR,Utilities,Electric Utilities
@@ -382,7 +379,6 @@ First Solar,FSLR,Information Technology,Semiconductors
 FirstEnergy,FE,Utilities,Electric Utilities
 Fiserv,FI,Financials,Transaction & Payment Processing Services
 Five Below,FIVE,Consumer Discretionary,Other Specialty Retail
-Five9,FIVN,Information Technology,
 Flex Ltd.,FLEX,Information Technology,Electronic Manufacturing Services
 Floor & Decor,FND,Consumer Discretionary,Home Improvement Retail
 Flowers Foods,FLO,Consumer Staples,Packaged Foods & Meats
@@ -393,7 +389,6 @@ FNB Corporation,FNB,Financials,Regional Banks
 Ford Motor Company,F,Consumer Discretionary,Automobile Manufacturers
 Fortinet,FTNT,Information Technology,Systems Software
 Fortive,FTV,Industrials,Industrial Machinery & Supplies & Components
-Fortrea,FTRE,Health Care,
 Fortune Brands Innovations,FBIN,Industrials,Building Products
 Fox Corporation (Class A),FOXA,Communication Services,Movies & Entertainment
 Fox Corporation (Class B),FOX,Communication Services,Movies & Entertainment
@@ -411,6 +406,8 @@ Gap Inc.,GAP,Consumer Discretionary,Apparel Retail
 Garmin,GRMN,Consumer Discretionary,Consumer Electronics
 Gartner,IT,Information Technology,IT Consulting & Other Services
 Gates Corporation,GTES,Industrials,
+GCI Liberty (Series A),GLIBA,Communication Services,Integrated Telecommunication Services
+GCI Liberty (Series C),GLIBK,Communication Services,Integrated Telecommunication Services
 GE Aerospace,GE,Industrials,Aerospace & Defense
 GE HealthCare,GEHC,Health Care,Health Care Equipment
 GE Vernova,GEV,Industrials,Industrial Machinery & Supplies & Components
@@ -485,6 +482,7 @@ Informatica,INFA,Information Technology,
 Ingersoll Rand,IR,Industrials,Industrial Machinery & Supplies & Components
 Ingram Micro,INGM,Information Technology,Technology Distributors
 Ingredion,INGR,Consumer Staples,Agricultural Products & Services
+Insmed,INSM,Health Care,Biotechnology
 Inspire Medical Systems,INSP,Health Care,
 Insulet,PODD,Health Care,
 Intel,INTC,Information Technology,Semiconductors
@@ -550,6 +548,7 @@ Leidos,LDOS,Industrials,Diversified Support Services
 Lennar (Class A),LEN,Consumer Discretionary,Homebuilding
 Lennar (Class B),LEN.B,Consumer Discretionary,Homebuilding
 Lennox International,LII,Industrials,Building Products
+Leonardo DRS,DRS,Industrials,Aerospace & Defense
 Liberty Broadband (Series A),LBRDA,Communication Services,
 Liberty Broadband (Series C),LBRDK,Communication Services,
 Liberty Global (Series A),LBTYA,Communication Services,Cable & Satellite
@@ -776,6 +775,7 @@ RenaissanceRe,RNR,Financials,Reinsurance
 Repligen,RGEN,Health Care,Biotechnology
 Republic Services,RSG,Industrials,Environmental & Facilities Services
 Resmed,RMD,Health Care,Health Care Equipment
+Restaurant Brands International,QSR,Consumer Discretionary,Restaurants
 Revolution Medicines,RVMD,Health Care,
 Revvity,RVTY,Health Care,Health Care Equipment
 Rexford Industrial,REXR,Real Estate,
@@ -805,9 +805,11 @@ Ryan Specialty,RYAN,Financials,
 Ryder,R,Industrials,Cargo Ground Transportation
 S&P Global,SPGI,Financials,Financial Exchanges & Data
 Saia,SAIA,Industrials,
+SailPoint,SAIL,Information Technology,Application Software
 SAIC,SAIC,Industrials,Diversified Support Services
 Salesforce,CRM,Information Technology,Application Software
 Sallie Mae,SLM,Financials,Consumer Finance
+Samsara,IOT,Information Technology,Systems Software
 SanDisk,SNDK,Information Technology,"Technology Hardware, Storage & Peripherals"
 Sarepta Therapeutics,SRPT,Health Care,
 SBA Communications,SBAC,Real Estate,Telecom Tower REITs
@@ -851,6 +853,7 @@ Southwest Airlines,LUV,Industrials,Passenger Airlines
 Spectrum Brands,SPB,Consumer Staples,
 Spirit AeroSystems,SPR,Industrials,
 Spotify,SPOT,Communication Services,Movies & Entertainment
+Sprouts Farmers Market,SFM,Consumer Staples,Food Retail
 SS&C Technologies,SSNC,Information Technology,
 STAG Industrial,STAG,Real Estate,
 StandardAero,SARO,Industrials,Aerospace & Defense
