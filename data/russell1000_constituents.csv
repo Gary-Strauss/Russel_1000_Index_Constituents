@@ -44,7 +44,6 @@ Altria,MO,Consumer Staples,Tobacco
 Amazon,AMZN,Consumer Discretionary,Broadline Retail
 Amcor,AMCR,Materials,Paper & Plastic Packaging Products & Materials
 Amdocs,DOX,Information Technology,
-Amedisys,AMED,Health Care,Health Care Services
 Amentum,AMTM,Industrials,Diversified Support Services
 Amer Sports,AS,Consumer Discretionary,Leisure Products
 Ameren,AEE,Utilities,Multi-Utilities
@@ -429,13 +428,12 @@ Globus Medical,GMED,Health Care,Health Care Equipment
 GoDaddy,GDDY,Information Technology,
 Goldman Sachs,GS,Financials,Investment Banking & Brokerage
 Graco Inc.,GGG,Industrials,Industrial Machinery & Supplies & Components
-"Grail, Inc.",GRAL,Health Care,Health Care Services
 Grand Canyon Education,LOPE,Consumer Discretionary,Education Services
 Graphic Packaging,GPK,Materials,
-Grocery Outlet,GO,Consumer Staples,Food Retail
 Guidewire Software,GWRE,Information Technology,
 GXO Logistics,GXO,Industrials,Air Freight & Logistics
 Halliburton,HAL,Energy,Oil & Gas Equipment & Services
+Halozyme,HALO,Health Care,Biotechnology
 Hamilton Lane,HLNE,Financials,
 Hanover Insurance,THG,Financials,Property & Casualty Insurance
 Harley-Davidson,HOG,Consumer Discretionary,Motorcycle Manufacturers
@@ -525,11 +523,10 @@ Kimberly-Clark,KMB,Consumer Staples,Household Products
 Kimco Realty,KIM,Real Estate,Retail REITs
 Kinder Morgan,KMI,Energy,Oil & Gas Storage & Transportation
 Kinsale Capital Group,KNSL,Financials,
-Kirby Corporation,KEX,Industrials,Marine
+Kirby Corporation,KEX,Industrials,Marine Transportation
 KKR & Co. Inc.,KKR,Financials,Asset Management & Custody Banks
 KLA Corporation,KLAC,Information Technology,Semiconductor Materials & Equipment
 Knight-Swift,KNX,Industrials,Cargo Ground Transportation
-Kohl's,KSS,Consumer Discretionary,General Merchandise Stores
 Kraft Heinz,KHC,Consumer Staples,Packaged Foods & Meats
 Kroger,KR,Consumer Staples,Food Retail
 Kyndryl,KD,Information Technology,IT Consulting & Other Services
@@ -543,7 +540,6 @@ Las Vegas Sands,LVS,Consumer Discretionary,Casinos & Gaming
 Lattice Semiconductor,LSCC,Information Technology,Semiconductors
 Lazard,LAZ,Financials,
 Lear Corporation,LEA,Consumer Discretionary,Automotive Parts & Equipment
-Leggett & Platt,LEG,Consumer Discretionary,Home Furnishings
 Leidos,LDOS,Industrials,Diversified Support Services
 Lennar (Class A),LEN,Consumer Discretionary,Homebuilding
 Lennar (Class B),LEN.B,Consumer Discretionary,Homebuilding
