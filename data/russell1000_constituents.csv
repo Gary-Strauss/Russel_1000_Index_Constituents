@@ -178,7 +178,7 @@ Caterpillar Inc.,CAT,Industrials,Construction Machinery & Heavy Transportation E
 Cava Group,CAVA,Consumer Discretionary,Restaurants
 Cboe Global Markets,CBOE,Financials,Financial Exchanges & Data
 CBRE Group,CBRE,Real Estate,Real Estate Services
-CCC Intelligent Solutions,CCCS,Information Technology,
+CCC Intelligent Solutions,CCC,Information Technology,
 CDW,CDW,Information Technology,Technology Distributors
 Celanese,CE,Materials,Specialty Chemicals
 Celsius Holdings,CELH,Consumer Staples,Soft Drinks & Non-alcoholic Beverages
@@ -204,6 +204,7 @@ Ciena,CIEN,Information Technology,Communications Equipment
 Cigna,CI,Health Care,Managed Health Care
 Cincinnati Financial,CINF,Financials,Property & Casualty Insurance
 Cintas,CTAS,Industrials,Diversified Support Services
+Circle Internet Group,CRCL,Information Technology,
 Cirrus Logic,CRUS,Information Technology,Semiconductors
 Cisco,CSCO,Information Technology,Communications Equipment
 Citigroup,C,Financials,Diversified Banks
@@ -301,7 +302,6 @@ Dropbox,DBX,Information Technology,
 DT Midstream,DTM,Energy,
 DTE Energy,DTE,Utilities,Multi-Utilities
 Duke Energy,DUK,Utilities,Electric Utilities
-Dun & Bradstreet,DNB,Industrials,
 Duolingo,DUOL,Consumer Discretionary,Education Services
 DuPont,DD,Materials,Specialty Chemicals
 Dutch Bros. Coffee,BROS,Consumer Discretionary,Restaurants
@@ -475,7 +475,6 @@ Idexx Laboratories,IDXX,Health Care,Health Care Equipment
 Illinois Tool Works,ITW,Industrials,Industrial Machinery & Supplies & Components
 "Illumina, Inc.",ILMN,Health Care,Life Sciences Tools & Services
 Incyte,INCY,Health Care,Biotechnology
-Informatica,INFA,Information Technology,
 Ingersoll Rand,IR,Industrials,Industrial Machinery & Supplies & Components
 Ingram Micro,INGM,Information Technology,Technology Distributors
 Ingredion,INGR,Consumer Staples,Agricultural Products & Services
@@ -627,7 +626,6 @@ Morgan Stanley,MS,Financials,Investment Banking & Brokerage
 Mosaic Company (The),MOS,Materials,Fertilizers & Agricultural Chemicals
 Motorola Solutions,MSI,Information Technology,Communications Equipment
 MP Materials,MP,Materials,Diversified Metals & Mining
-Mr. Cooper Group,COOP,Financials,Commercial & Residential Mortgage Finance
 MSA Safety,MSA,Industrials,Office Services & Supplies
 MSC Industrial Direct,MSM,Industrials,Trading Companies & Distributors
 MSCI,MSCI,Financials,Financial Exchanges & Data
