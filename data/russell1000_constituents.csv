@@ -153,6 +153,7 @@ Brown–Forman (Class B),BF.B,Consumer Staples,Distillers & Vintners
 Bruker,BRKR,Health Care,Health Care Equipment
 Brunswick Corporation,BC,Consumer Discretionary,Leisure Products
 Builders FirstSource,BLDR,Industrials,Building Products
+Bullish,BLSH,Financials,
 Bunge Global,BG,Consumer Staples,Agricultural Products & Services
 Burlington Stores,BURL,Consumer Discretionary,
 BWX Technologies,BWXT,Industrials,
@@ -365,9 +366,11 @@ Fastenal,FAST,Industrials,Building Products
 Federal Realty Investment Trust,FRT,Real Estate,Retail REITs
 FedEx,FDX,Industrials,Air Freight & Logistics
 Ferguson Enterprises,FERG,Industrials,Industrial Machinery & Supplies & Components
+Fermi Inc.,FRMI,Real Estate,
 Fidelity National Financial,FNF,Financials,
 Fidelity National Information Services,FIS,Financials,Transaction & Payment Processing Services
 Fifth Third Bancorp,FITB,Financials,Regional Banks
+Figure Technology Solutions,FIGR,Financials,
 First American Financial Corporation,FAF,Financials,Property & Casualty Insurance
 First Citizens BancShares,FCNCA,Financials,
 "First Hawaiian, Inc.",FHB,Financials,Regional Banks
@@ -857,7 +860,6 @@ Sun Communities,SUI,Real Estate,
 Supermicro,SMCI,Information Technology,"Technology Hardware, Storage & Peripherals"
 Synchrony Financial,SYF,Financials,Consumer Finance
 Synopsys,SNPS,Information Technology,Application Software
-Synovus,SNV,Financials,Regional Banks
 Sysco,SYY,Consumer Staples,Food Distributors
 T-Mobile US,TMUS,Communication Services,Wireless Telecommunication Services
 Take-Two Interactive,TTWO,Communication Services,Interactive Home Entertainment
@@ -939,6 +941,7 @@ Veralto,VLTO,Industrials,
 Verisign,VRSN,Information Technology,Internet Services & Infrastructure
 Verisk Analytics,VRSK,Industrials,Research & Consulting Services
 Verizon,VZ,Communication Services,Integrated Telecommunication Services
+Versant,VSNT,Communication Services,
 Vertex Pharmaceuticals,VRTX,Health Care,Biotechnology
 Vertiv,VRT,Industrials,
 VF Corporation,VFC,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
