@@ -226,12 +226,11 @@ Coca-Cola Consolidated,COKE,Consumer Staples,Soft Drinks & Non-alcoholic Beverag
 Cognex Corporation,CGNX,Information Technology,Electronic Equipment & Instruments
 Cognizant,CTSH,Information Technology,IT Consulting & Other Services
 Coherent Corp.,COHR,Information Technology,Electronic Components
-Coinbase,COIN,Financials,
+Coinbase,COIN,Financials,Financial Exchanges & Data
 Colgate-Palmolive,CL,Consumer Staples,Household Products
 Columbia Banking System,COLB,Financials,Regional Banks
 Columbia Sportswear,COLM,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
 Comcast,CMCSA,Communication Services,Cable & Satellite
-Comerica,CMA,Financials,Diversified Banks
 Comfort Systems USA,FIX,Industrials,Construction & Engineering
 Commerce Bancshares,CBSH,Financials,Regional Banks
 Conagra Brands,CAG,Consumer Staples,Packaged Foods & Meats
@@ -273,7 +272,6 @@ Darden Restaurants,DRI,Consumer Discretionary,Restaurants
 Darling Ingredients,DAR,Consumer Staples,
 Datadog,DDOG,Information Technology,Application Software
 DaVita,DVA,Health Care,Health Care Facilities
-Dayforce,DAY,Industrials,Human Resource & Employment Services
 Deckers Brands,DECK,Consumer Discretionary,Footwear
 Deere & Company,DE,Industrials,Agricultural & Farm Machinery
 Delta Air Lines,DAL,Industrials,Passenger Airlines
@@ -775,7 +773,7 @@ Rithm Capital,RITM,Financials,
 Rivian,RIVN,Consumer Discretionary,
 RLI Corp.,RLI,Financials,
 Robert Half,RHI,Industrials,Human Resource & Employment Services
-Robinhood Markets,HOOD,Financials,
+Robinhood Markets,HOOD,Financials,Investment Banking & Brokerage
 Roblox Corporation,RBLX,Communication Services,
 Rocket Companies,RKT,Financials,
 Rocket Lab,RKLB,Industrials,Aerospace & Defense
@@ -934,7 +932,7 @@ Valmont Industries,VMI,Industrials,Industrial Machinery & Supplies & Components
 Valvoline,VVV,Materials,Commodity Chemicals
 Veeva Systems,VEEV,Health Care,
 "Ventas, Inc.",VTR,Real Estate,Health Care REITs
-Veralto,VLTO,Industrials,
+Veralto,VLTO,Industrials,Environmental & Facilities Services
 Verisign,VRSN,Information Technology,Internet Services & Infrastructure
 Verisk Analytics,VRSK,Industrials,Research & Consulting Services
 Verizon,VZ,Communication Services,Integrated Telecommunication Services
@@ -949,7 +947,7 @@ Viking Therapeutics,VKTX,Health Care,Biotechnology
 Viper Energy,VNOM,Energy,Oil & Gas Storage & Transportation
 Virtu Financial,VIRT,Financials,
 Visa Inc.,V,Financials,Transaction & Payment Processing Services
-Vistra Corp.,VST,Utilities,
+Vistra Corp.,VST,Utilities,Electric Utilities
 Vontier,VNT,Information Technology,Electronic Equipment & Instruments
 Vornado Realty Trust,VNO,Real Estate,Office REITs
 Voya Financial,VOYA,Financials,Multi-Sector Holdings
