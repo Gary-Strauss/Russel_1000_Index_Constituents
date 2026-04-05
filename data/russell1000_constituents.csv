@@ -65,7 +65,7 @@ AngloGold Ashanti,AU,Materials,Gold
 Annaly Capital Management,NLY,Financials,
 Antero Midstream,AM,Energy,
 Antero Resources,AR,Energy,
-AON,AON,Financials,Insurance Brokers
+Aon plc,AON,Financials,Insurance Brokers
 APA Corporation,APA,Energy,Oil & Gas Exploration & Production
 APi Group,APG,Industrials,Construction & Engineering
 Apellis Pharmaceuticals,APLS,Health Care,Biotechnology
@@ -186,6 +186,7 @@ Celsius Holdings,CELH,Consumer Staples,Soft Drinks & Non-alcoholic Beverages
 Cencora,COR,Health Care,Health Care Distributors
 Centene,CNC,Health Care,Managed Health Care
 Centerpoint Energy,CNP,Utilities,Multi-Utilities
+Central Bancompany,CBC,Financials,
 "Certara, Inc.",CERT,Health Care,
 CF Industries,CF,Materials,Fertilizers & Agricultural Chemicals
 Charles River Laboratories,CRL,Health Care,Life Sciences Tools & Services
@@ -235,7 +236,6 @@ Comfort Systems USA,FIX,Industrials,Construction & Engineering
 Commerce Bancshares,CBSH,Financials,Regional Banks
 Conagra Brands,CAG,Consumer Staples,Packaged Foods & Meats
 Concentrix,CNXC,Information Technology,Data Processing & Outsourced Services
-"Confluent, Inc.",CFLT,Information Technology,
 ConocoPhillips,COP,Energy,Oil & Gas Exploration & Production
 Consolidated Edison,ED,Utilities,Electric Utilities
 Constellation Brands,STZ,Consumer Staples,Distillers & Vintners
@@ -348,7 +348,6 @@ Evergy,EVRG,Utilities,Electric Utilities
 Everpure,PSTG,Information Technology,"Technology Hardware, Storage & Peripherals"
 Eversource Energy,ES,Utilities,Multi-Utilities
 Everus Construction Group,ECG,Industrials,Construction & Engineering
-Exact Sciences,EXAS,Health Care,
 Exelixis,EXEL,Health Care,Biotechnology
 Exelon,EXC,Utilities,Multi-Utilities
 EXL Service,EXLS,Industrials,Data Processing & Outsourced Services
@@ -595,6 +594,7 @@ McDonald's,MCD,Consumer Discretionary,Restaurants
 McKesson Corporation,MCK,Health Care,Health Care Distributors
 MDU Resources,MDU,Utilities,Multi-Utilities
 Medical Properties Trust,MPT,Real Estate,Health Care REITs
+Medline Inc.,MDLN,Health Care,
 Medpace,MEDP,Health Care,
 Medtronic,MDT,Health Care,Health Care Equipment
 Merck & Co.,MRK,Health Care,Pharmaceuticals
@@ -937,6 +937,7 @@ Verisign,VRSN,Information Technology,Internet Services & Infrastructure
 Verisk Analytics,VRSK,Industrials,Research & Consulting Services
 Verizon,VZ,Communication Services,Integrated Telecommunication Services
 Versant,VSNT,Communication Services,
+Versigent,VGNT,Consumer Discretionary,Automotive Parts & Equipment
 Vertex Pharmaceuticals,VRTX,Health Care,Biotechnology
 Vertiv,VRT,Industrials,
 VF Corporation,VFC,Consumer Discretionary,"Apparel, Accessories & Luxury Goods"
