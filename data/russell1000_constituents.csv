@@ -129,7 +129,7 @@ Blackstone Inc.,BX,Financials,Asset Management & Custody Banks
 H&R Block,HRB,Consumer Discretionary,Specialized Consumer Services
 "Block, Inc.",XYZ,Financials,Transaction & Payment Processing Services
 Blue Owl Capital,OWL,Financials,
-BNY Mellon,BK,Financials,Asset Management & Custody Banks
+BNY Mellon,BNY,Financials,Asset Management & Custody Banks
 Boeing,BA,Industrials,Aerospace & Defense
 BOK Financial Corporation,BOKF,Financials,
 Booking Holdings,BKNG,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
@@ -300,7 +300,7 @@ DTE Energy,DTE,Utilities,Multi-Utilities
 Duke Energy,DUK,Utilities,Electric Utilities
 Duolingo,DUOL,Consumer Discretionary,Education Services
 DuPont,DD,Materials,Specialty Chemicals
-Dutch Bros. Coffee,BROS,Consumer Discretionary,Restaurants
+Dutch Bros Inc.,BROS,Consumer Discretionary,Restaurants
 DXC Technology,DXC,Information Technology,IT Consulting & Other Services
 Dynatrace,DT,Information Technology,
 e.l.f. Beauty,ELF,Consumer Staples,Personal Care Products
@@ -343,7 +343,7 @@ Euronet Worldwide,EEFT,Financials,Transaction & Payment Processing Services
 Evercore,EVR,Financials,Investment Banking & Brokerage
 Everest Group,EG,Financials,Reinsurance
 Evergy,EVRG,Utilities,Electric Utilities
-Everpure,PSTG,Information Technology,"Technology Hardware, Storage & Peripherals"
+Everpure,P,Information Technology,"Technology Hardware, Storage & Peripherals"
 Eversource Energy,ES,Utilities,Multi-Utilities
 Everus Construction Group,ECG,Industrials,Construction & Engineering
 Exelixis,EXEL,Health Care,Biotechnology
