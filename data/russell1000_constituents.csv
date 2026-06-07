@@ -360,6 +360,7 @@ Fair Isaac,FICO,Information Technology,Application Software
 Fastenal,FAST,Industrials,Building Products
 Federal Realty Investment Trust,FRT,Real Estate,Retail REITs
 FedEx,FDX,Industrials,Air Freight & Logistics
+FedEx Freight,FDXF,Industrials,Cargo Ground Transportation
 Ferguson Enterprises,FERG,Industrials,Industrial Machinery & Supplies & Components
 Fermi Inc.,FRMI,Real Estate,
 Fidelity National Financial,FNF,Financials,
@@ -463,7 +464,6 @@ Huntington Bancshares,HBAN,Financials,Regional Banks
 Huntington Ingalls Industries,HII,Industrials,Aerospace & Defense
 Huntsman Corporation,HUN,Materials,
 Hyatt Hotels,H,Consumer Discretionary,
-IAC Inc.,IAC,Communication Services,
 IBM,IBM,Information Technology,IT Consulting & Other Services
 Idacorp,IDA,Utilities,Electric Utilities
 IDEX Corporation,IEX,Industrials,Industrial Machinery & Supplies & Components
@@ -698,6 +698,7 @@ Penn Entertainment,PENN,Consumer Discretionary,Casinos & Gaming
 Penske Automotive Group,PAG,Consumer Discretionary,
 Pentair,PNR,Industrials,Industrial Machinery & Supplies & Components
 "Penumbra, Inc.",PEN,Health Care,Health Care Equipment
+People Inc.,PPLI,Communication Services,
 PepsiCo,PEP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages
 Performance Food Group,PFGC,Consumer Staples,Food Distributors
 Permian Resources,PR,Energy,Oil & Gas Exploration & Production
