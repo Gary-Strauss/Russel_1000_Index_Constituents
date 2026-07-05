@@ -450,7 +450,8 @@ HF Sinclair,DINO,Energy,Oil & Gas Refining & Marketing
 Highwoods Properties,HIW,Real Estate,
 Hilton Worldwide,HLT,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
 Home Depot (The),HD,Consumer Discretionary,Home Improvement Retail
-Honeywell,HON,Industrials,Industrial Conglomerates
+Honeywell Aerospace,HONA,Industrials,Aerospace & Defense
+Honeywell Technologies,HON,Industrials,Industrial Conglomerates
 Hormel Foods,HRL,Consumer Staples,Packaged Foods & Meats
 Host Hotels & Resorts,HST,Real Estate,Hotel & Resort REITs
 Houlihan Lokey,HLI,Financials,
@@ -495,7 +496,6 @@ ITT Inc.,ITT,Industrials,Industrial Machinery & Supplies & Components
 Jabil,JBL,Information Technology,Electronic Manufacturing Services
 Jacobs Solutions,J,Industrials,Construction & Engineering
 James Hardie Industries,JHX,Materials,
-Janus Henderson,JHG,Financials,Asset Management & Custody Banks
 Jazz Pharmaceuticals,JAZZ,Health Care,Pharmaceuticals
 J. B. Hunt,JBHT,Industrials,Cargo Ground Transportation
 Jefferies Financial Group,JEF,Financials,Multi-Sector Holdings
@@ -881,7 +881,6 @@ TJX Companies,TJX,Consumer Discretionary,Apparel Retail
 TKO Group Holdings,TKO,Communication Services,Movies & Entertainment
 "Toast, Inc.",TOST,Information Technology,Transaction & Payment Processing Services
 Toll Brothers,TOL,Consumer Discretionary,Homebuilding
-TopBuild,BLD,Consumer Discretionary,
 Toro Company (The),TTC,Industrials,Agricultural & Farm Machinery
 TPG Inc.,TPG,Financials,
 Tractor Supply Company,TSCO,Consumer Discretionary,Other Specialty Retail
@@ -1002,3 +1001,4 @@ Zoetis,ZTS,Health Care,Pharmaceuticals
 Zoom Communications,ZM,Information Technology,Application Software
 ZoomInfo,GTM,Communication Services,
 Zscaler,ZS,Information Technology,Application Software
+,,,
