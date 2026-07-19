@@ -4,14 +4,15 @@ A. O. Smith,AOS,Industrials,Building Products
 AAON,AAON,Industrials,Building Products
 Abbott Laboratories,ABT,Health Care,Health Care Equipment
 AbbVie,ABBV,Health Care,Pharmaceuticals
-Acadia Healthcare,ACHC,Health Care,Health Care Facilities
 Accenture,ACN,Information Technology,IT Consulting & Other Services
 Acuity Brands,AYI,Industrials,Electrical Components & Equipment
 Adobe Inc.,ADBE,Information Technology,Application Software
 ADT Inc.,ADT,Consumer Discretionary,
 Advanced Drainage Systems,WMS,Industrials,
+Advanced Energy,AEIS,Information Technology,Semiconductor Materials & Equipment
 Advanced Micro Devices,AMD,Information Technology,Semiconductors
 AECOM,ACM,Industrials,Construction & Engineering
+AeroVironment,AVAV,Industrials,Aerospace & Defense
 AES Corporation,AES,Utilities,Independent Power Producers & Energy Traders
 Affiliated Managers Group,AMG,Financials,Asset Management & Custody Banks
 Affirm Holdings,AFRM,Information Technology,
@@ -20,7 +21,6 @@ AGCO,AGCO,Industrials,Agricultural & Farm Machinery
 Agilent Technologies,A,Health Care,Health Care Equipment
 Agree Realty,ADC,Real Estate,
 AGNC Investment,AGNC,Financials,
-Air Lease Corporation,AL,Industrials,
 Air Products,APD,Materials,Industrial Gases
 Airbnb,ABNB,Consumer Discretionary,"Hotels, Resorts & Cruise lines"
 Akamai Technologies,AKAM,Information Technology,Internet Services & Infrastructure
@@ -36,6 +36,7 @@ Alliant Energy,LNT,Utilities,Electric Utilities
 Allison Transmission,ALSN,Industrials,
 Allstate,ALL,Financials,Property & Casualty Insurance
 Ally Financial,ALLY,Financials,
+Almonty Industries,ALM,Materials,Diversified Metals & Mining
 Alnylam Pharmaceuticals,ALNY,Health Care,
 Alphabet (Class A),GOOGL,Communication Services,Interactive Media & Services
 Alphabet (Class C),GOOG,Communication Services,Interactive Media & Services
@@ -50,6 +51,7 @@ American Airlines Group,AAL,Industrials,Passenger Airlines
 American Electric Power,AEP,Utilities,Electric Utilities
 American Express,AXP,Financials,Consumer Finance
 American Financial Group,AFG,Financials,Multi-line Insurance
+American Healthcare REIT,AHR,Real Estate,Health Care REITs
 American Homes 4 Rent,AMH,Real Estate,
 American International Group,AIG,Financials,Property & Casualty Insurance
 American Tower,AMT,Real Estate,Telecom Tower REITs
@@ -71,8 +73,10 @@ APi Group,APG,Industrials,Construction & Engineering
 Apollo Global Management,APO,Financials,Asset Management & Custody Banks
 AppFolio,APPF,Information Technology,Application Software
 Apple Inc.,AAPL,Information Technology,"Technology Hardware, Storage & Peripherals"
+Applied Digital,APLD,Information Technology,Internet Services & Infrastructure
 Applied Industrial Technologies,AIT,Industrials,Trading Companies & Distributors
 Applied Materials,AMAT,Information Technology,Semiconductor Materials & Equipment
+Applied Optoelectronics,AAOI,Information Technology,Semiconductors
 AppLovin,APP,Information Technology,Application Software
 AptarGroup,ATR,Materials,"Metal, Glass & Plastic Containers"
 Aptiv,APTV,Consumer Discretionary,Automotive Parts & Equipment
@@ -83,7 +87,9 @@ Ares Management,ARES,Financials,
 Arista Networks,ANET,Information Technology,Communications Equipment
 Armstrong World Industries,AWI,Industrials,
 Arrow Electronics,ARW,Information Technology,Technology Distributors
+Arrowhead Pharmaceuticals,ARWR,Health Care,Biotechnology
 Arthur J. Gallagher & Co.,AJG,Financials,Insurance Brokers
+Ascendis Pharma,ASND,Health Care,Biotechnology
 Ashland Global,ASH,Materials,Diversified Chemicals
 Assurant,AIZ,Financials,Multi-line Insurance
 Assured Guaranty,AGO,Financials,
@@ -93,6 +99,7 @@ AT&T,T,Communication Services,Integrated Telecommunication Services
 ATI Inc.,ATI,Industrials,Aerospace & Defense
 Atlassian,TEAM,Information Technology,Application Software
 Atmos Energy,ATO,Utilities,Gas Utilities
+Aura Minerals,AUGO,Materials,Gold
 Aurora Innovation,AUR,Information Technology,
 Autodesk,ADSK,Information Technology,Application Software
 Automatic Data Processing,ADP,Industrials,Human Resource & Employment Services
@@ -106,6 +113,7 @@ Avnet,AVT,Information Technology,Technology Distributors
 Axalta,AXTA,Materials,
 AXIS Capital,AXS,Financials,
 Axon Enterprise,AXON,Industrials,Aerospace & Defense
+Axsome Therapeutics,AXSM,Health Care,Biotechnology
 Baker Hughes,BKR,Energy,Oil & Gas Equipment & Services
 Ball Corporation,BALL,Materials,"Metal, Glass & Plastic Containers"
 Bank of America,BAC,Financials,Diversified Banks
@@ -494,11 +502,12 @@ IQVIA,IQV,Health Care,Life Sciences Tools & Services
 Iridium Communications,IRDM,Communication Services,
 Iron Mountain,IRM,Real Estate,Other Specialized REITs
 ITT Inc.,ITT,Industrials,Industrial Machinery & Supplies & Components
+J. B. Hunt,JBHT,Industrials,Cargo Ground Transportation
 Jabil,JBL,Information Technology,Electronic Manufacturing Services
 Jacobs Solutions,J,Industrials,Construction & Engineering
 James Hardie Industries,JHX,Materials,
+Janus Living,JAN,Real Estate,Multi-Family Residential REITs
 Jazz Pharmaceuticals,JAZZ,Health Care,Pharmaceuticals
-J. B. Hunt,JBHT,Industrials,Cargo Ground Transportation
 Jefferies Financial Group,JEF,Financials,Multi-Sector Holdings
 Johnson & Johnson,JNJ,Health Care,Pharmaceuticals
 Johnson Controls,JCI,Industrials,Building Products
@@ -827,6 +836,7 @@ Snap-on,SNA,Industrials,Industrial Machinery & Supplies & Components
 Snowflake Inc.,SNOW,Information Technology,
 SoFi,SOFI,Financials,
 Solstice Advanced Materials,SOLS,Materials,
+SOLV Energy,MWH,Industrials,Heavy Electrical Equipment
 Solventum,SOLV,Health Care,Health Care Equipment
 Somnigroup International,SGI,Consumer Discretionary,Home Furnishings
 Sonoco,SON,Materials,Paper & Plastic Packaging Products & Materials
@@ -988,6 +998,7 @@ Wintrust Financial,WTFC,Financials,Regional Banks
 "Workday, Inc.",WDAY,Information Technology,Application Software
 Wyndham Hotels & Resorts,WH,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
 Wynn Resorts,WYNN,Consumer Discretionary,Casinos & Gaming
+X-energy,XE,Industrials,Heavy Electrical Equipment
 Xcel Energy,XEL,Utilities,Multi-Utilities
 XP Inc.,XP,Financials,Investment Banking & Brokerage
 "XPO, Inc.",XPO,Industrials,Cargo Ground Transportation
