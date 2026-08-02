@@ -121,7 +121,6 @@ Bank OZK,OZK,Financials,Regional Banks
 "Bath & Body Works, Inc.",BBWI,Consumer Discretionary,Other Specialty Retail
 Baxter International,BAX,Health Care,Health Care Equipment
 Becton Dickinson,BDX,Health Care,Health Care Equipment
-BellRing Brands,BRBR,Consumer Staples,Packaged Foods & Meats
 Bentley Systems,BSY,Information Technology,
 Berkshire Hathaway,BRK.B,Financials,Multi-Sector Holdings
 Best Buy,BBY,Consumer Discretionary,Computer & Electronics Retail
@@ -131,11 +130,13 @@ Bio-Techne,TECH,Health Care,Life Sciences Tools & Services
 Biogen,BIIB,Health Care,Biotechnology
 BioMarin Pharmaceutical,BMRN,Health Care,
 Birkenstock,BIRK,Consumer Discretionary,Footwear
+Bitmine Immersion Technologies,BMNR,Information Technology,
 BJ's Wholesale Club,BJ,Consumer Staples,Hypermarkets & Super Centers
 BlackRock,BLK,Financials,Asset Management & Custody Banks
 Blackstone Inc.,BX,Financials,Asset Management & Custody Banks
 H&R Block,HRB,Consumer Discretionary,Specialized Consumer Services
 "Block, Inc.",XYZ,Financials,Transaction & Payment Processing Services
+Bloom Energy,BE,Industrials,
 Blue Owl Capital,OWL,Financials,
 BNY Mellon,BNY,Financials,Asset Management & Custody Banks
 Boeing,BA,Industrials,Aerospace & Defense
@@ -146,6 +147,7 @@ BorgWarner,BWA,Consumer Discretionary,Automotive Parts & Equipment
 Boston Beer Company,SAM,Consumer Staples,Brewers
 Boston Scientific,BSX,Health Care,Health Care Equipment
 Boyd Gaming,BYD,Consumer Discretionary,Casinos & Gaming
+BridgeBio Pharma,BBIO,Health Care,
 Bright Horizons,BFAM,Consumer Discretionary,
 Brighthouse Financial,BHF,Financials,Life & Health Insurance
 Bristol Myers Squibb,BMY,Health Care,Health Care Distributors
@@ -194,7 +196,6 @@ Cencora,COR,Health Care,Health Care Distributors
 Centene,CNC,Health Care,Managed Health Care
 Centerpoint Energy,CNP,Utilities,Multi-Utilities
 Central Bancompany,CBC,Financials,
-"Certara, Inc.",CERT,Health Care,
 CF Industries,CF,Materials,Fertilizers & Agricultural Chemicals
 Charles River Laboratories,CRL,Health Care,Life Sciences Tools & Services
 Charles Schwab Corporation,SCHW,Financials,Investment Banking & Brokerage
@@ -203,6 +204,7 @@ Chemed Corporation,CHE,Health Care,Health Care Services
 Cheniere Energy,LNG,Energy,
 Chevron Corporation,CVX,Energy,Integrated Oil & Gas
 Chewy,CHWY,Consumer Discretionary,Other Specialty Retail
+Chime Financial,CHYM,Financials,
 Chipotle Mexican Grill,CMG,Consumer Discretionary,Restaurants
 Choice Hotels,CHH,Consumer Discretionary,"Hotels, Resorts & Cruise Lines"
 Chord Energy,CHRD,Energy,Oil & Gas Exploration & Production
@@ -218,9 +220,7 @@ Cirrus Logic,CRUS,Information Technology,Semiconductors
 Cisco,CSCO,Information Technology,Communications Equipment
 Citigroup,C,Financials,Diversified Banks
 Citizens Financial Group,CFG,Financials,Regional Banks
-Clarivate,CLVT,Industrials,
 Clean Harbors,CLH,Industrials,Environmental & Facilities Services
-Clearway Energy (Class A),CWEN.A,Utilities,
 Clearway Energy (Class C),CWEN,Utilities,
 Cleveland-Cliffs,CLF,Materials,Steel
 Clorox,CLX,Consumer Staples,Household Products
@@ -231,6 +231,7 @@ CNA Financial,CNA,Financials,
 CNH Industrial,CNH,Industrials,
 Coca-Cola Company (The),KO,Consumer Staples,Soft Drinks & Non-alcoholic Beverages
 Coca-Cola Consolidated,COKE,Consumer Staples,Soft Drinks & Non-alcoholic Beverages
+Coeur Mining,CDE,Materials,
 Cognex Corporation,CGNX,Information Technology,Electronic Equipment & Instruments
 Cognizant,CTSH,Information Technology,IT Consulting & Other Services
 Coherent Corp.,COHR,Information Technology,Electronic Components
@@ -242,7 +243,6 @@ Comcast,CMCSA,Communication Services,Cable & Satellite
 Comfort Systems USA,FIX,Industrials,Construction & Engineering
 Commerce Bancshares,CBSH,Financials,Regional Banks
 Conagra Brands,CAG,Consumer Staples,Packaged Foods & Meats
-Concentrix,CNXC,Information Technology,Data Processing & Outsourced Services
 ConocoPhillips,COP,Energy,Oil & Gas Exploration & Production
 Consolidated Edison,ED,Utilities,Electric Utilities
 Constellation Brands,STZ,Consumer Staples,Distillers & Vintners
@@ -251,17 +251,18 @@ Cooper Companies (The),COO,Health Care,Health Care Supplies
 Copart,CPRT,Industrials,Diversified Support Services
 Corcept Therapeutics,CORT,Health Care,Pharmaceuticals
 Core & Main,CNM,Industrials,Trading Companies & Distributors
+Corebridge Financial,CRBG,Financials,
+CoreWeave,CRWV,Information Technology,
 Corning Inc.,GLW,Information Technology,Electronic Components
 Corpay,CPAY,Financials,Transaction & Payment Processing Services
 Corteva,CTVA,Materials,Fertilizers & Agricultural Chemicals
 CoStar Group,CSGP,Real Estate,Real Estate Services
 Costco,COST,Consumer Staples,Consumer Staples Merchandise Retail
-Coty,COTY,Consumer Staples,Personal Care Products
 Coupang,CPNG,Consumer Discretionary,
 Cousins Properties,CUZ,Real Estate,Office REITs
 Crane Co.,CR,Industrials,Industrial Machinery & Supplies & Components
-Crane NXT,CXT,Industrials,Industrial Machinery & Supplies & Components
 Credit Acceptance,CACC,Financials,
+Credo Technology Group,CRDO,Information Technology,
 CRH plc,CRH,Materials,Construction Materials
 Crocs,CROX,Consumer Discretionary,Footwear
 CrowdStrike,CRWD,Information Technology,Application Software
@@ -288,6 +289,7 @@ Dexcom,DXCM,Health Care,Health Care Equipment
 Diamondback Energy,FANG,Energy,Oil & Gas Exploration & Production
 Dick's Sporting Goods,DKS,Consumer Discretionary,Other Specialty Retail
 Digital Realty,DLR,Real Estate,Data Center REITs
+DigitalOcean,DOCN,Information Technology,
 Dillard's,DDS,Consumer Discretionary,Broadline Retail
 DocuSign,DOCU,Information Technology,Application Software
 Dolby Laboratories,DLB,Information Technology,
@@ -297,7 +299,6 @@ Dominion Energy,D,Utilities,Electric Utilities
 Domino's,DPZ,Consumer Discretionary,Restaurants
 Donaldson Company,DCI,Industrials,Industrial Machinery & Supplies & Components
 DoorDash,DASH,Consumer Discretionary,Interactive Media & Services
-DoubleVerify,DV,Information Technology,
 Dover Corporation,DOV,Industrials,Industrial Machinery & Supplies & Components
 Dow Inc.,DOW,Materials,Commodity Chemicals
 Doximity,DOCS,Health Care,
@@ -309,7 +310,6 @@ Duke Energy,DUK,Utilities,Electric Utilities
 Duolingo,DUOL,Consumer Discretionary,Education Services
 DuPont,DD,Materials,Specialty Chemicals
 Dutch Bros Inc.,BROS,Consumer Discretionary,Restaurants
-DXC Technology,DXC,Information Technology,IT Consulting & Other Services
 Dynatrace,DT,Information Technology,
 e.l.f. Beauty,ELF,Consumer Staples,Personal Care Products
 Eagle Materials,EXP,Materials,Construction Materials
@@ -905,7 +905,6 @@ Travelers Companies (The),TRV,Financials,Property & Casualty Insurance
 "Trex Company, Inc.",TREX,Industrials,Building Products
 Trimble Inc.,TRMB,Information Technology,Electronic Equipment & Instruments
 Truist Financial,TFC,Financials,Regional Banks
-Trump Media & Technology Group,DJT,Communication Services,Interactive Media & Services
 Twilio,TWLO,Information Technology,
 Tyler Technologies,TYL,Information Technology,Application Software
 Tyson Foods,TSN,Consumer Staples,Packaged Foods & Meats
