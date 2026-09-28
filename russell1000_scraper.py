@@ -29,33 +29,40 @@ def fetch_webpage(url):
     return BeautifulSoup(response.text, 'html.parser')
 
 
+def _header_texts(table):
+    """Return the lower-cased header cell texts of a table."""
+    first_row = table.find('tr')
+    if not first_row:
+        return []
+    return [cell.get_text(strip=True).lower() for cell in first_row.find_all(['th', 'td'])]
+
+
+def _is_constituents_table(table):
+    """A constituents table must have a symbol/ticker column."""
+    return any('symbol' in h or 'ticker' in h for h in _header_texts(table))
+
+
 def find_russell_table(soup):
     """Find and extract the Russell 1000 components table from the webpage."""
-    # Search for the "Components" table - try different approaches
-    table = None
-    
-    # First try to search for a table with "Components" in the preceding text
-    for heading in soup.find_all(['h2', 'h3']):
-        if 'component' in heading.get_text().lower():
-            table = heading.find_next('table')
-            if table:
-                break
-    
-    # If that doesn't work, search for the largest wikitable
-    if not table:
-        tables = soup.find_all('table', {'class': 'wikitable'})
-        if tables:
-            # Take the largest table
-            table = max(tables, key=lambda t: len(t.find_all('tr')))
+    # Only tables with a symbol/ticker column are candidates. This prevents
+    # silently picking unrelated tables such as the annual returns table.
+    tables = soup.find_all('table', {'class': 'wikitable'}) or soup.find_all('table')
+    candidates = [t for t in tables if _is_constituents_table(t)]
 
-    if not table:
+    if not candidates:
         raise ValueError("No suitable table found.")
 
-    logging.info(f"Table found with {len(table.find_all('tr'))} rows")
+    # Take the largest candidate; if the list is split into several tables
+    # with identical headers (e.g. alphabetical sections), combine them.
+    largest = max(candidates, key=lambda t: len(t.find_all('tr')))
+    headers = _header_texts(largest)
+    selected = [t for t in candidates if _header_texts(t) == headers]
+
+    logging.info(f"{len(selected)} table(s) found with {sum(len(t.find_all('tr')) for t in selected)} rows")
 
     # Extract data with StringIO to avoid FutureWarning
-    table_html = str(table)
-    df = pd.read_html(StringIO(table_html))[0]
+    frames = [pd.read_html(StringIO(str(t)))[0] for t in selected]
+    df = pd.concat(frames, ignore_index=True) if len(frames) > 1 else frames[0]
 
     logging.info(f"DataFrame created with {len(df)} rows and columns: {list(df.columns)}")
     
@@ -85,6 +92,9 @@ def process_dataframe(df):
 
 def validate_data(df):
     """Validate the extracted data."""
+    if 'Symbol' not in df.columns:
+        raise ValueError(f"No 'Symbol' column found in columns: {list(df.columns)}")
+
     # Validation - less strict
     if len(df) < 100:
         raise ValueError(f"The number of companies ({len(df)}) is suspiciously low.")
@@ -125,7 +135,7 @@ def save_data(df):
 
 def scrape_russell1000():
     """Main function to orchestrate the Russell 1000 scraping process."""
-    url = "https://en.wikipedia.org/wiki/Russell_1000_Index"
+    url = "https://en.wikipedia.org/wiki/List_of_Russell_1000_companies"
     
     # Fetch webpage
     soup = fetch_webpage(url)

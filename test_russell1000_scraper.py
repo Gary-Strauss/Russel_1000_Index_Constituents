@@ -109,6 +109,48 @@ class TestFindRussellTable:
         with pytest.raises(ValueError, match="No suitable table found"):
             find_russell_table(soup)
 
+    def test_ignores_returns_table_without_symbol_column(self):
+        """Regression: the annual returns table must not be picked."""
+        rows = ''.join(f'<tr><td>{y}</td><td>1%</td><td>2%</td></tr>' for y in range(1995, 2026))
+        html = f"""
+        <html><body>
+            <h2>Annual returns</h2>
+            <table class="wikitable">
+                <tr><th>Year</th><th>Price return</th><th>Total return</th></tr>{rows}
+            </table>
+        </body></html>
+        """
+        soup = BeautifulSoup(html, 'html.parser')
+
+        with pytest.raises(ValueError, match="No suitable table found"):
+            find_russell_table(soup)
+
+    def test_combines_split_tables_with_same_header(self):
+        """Constituents split across several tables are combined."""
+        html = """
+        <html><body>
+            <table class="wikitable">
+                <tr><th>Year</th><th>Return</th></tr>
+                <tr><td>2024</td><td>1%</td></tr>
+                <tr><td>2025</td><td>2%</td></tr>
+                <tr><td>2026</td><td>3%</td></tr>
+            </table>
+            <table class="wikitable">
+                <tr><th>Company</th><th>Symbol</th></tr>
+                <tr><td>Apple</td><td>AAPL</td></tr>
+                <tr><td>Amazon</td><td>AMZN</td></tr>
+            </table>
+            <table class="wikitable">
+                <tr><th>Company</th><th>Symbol</th></tr>
+                <tr><td>Microsoft</td><td>MSFT</td></tr>
+            </table>
+        </body></html>
+        """
+        soup = BeautifulSoup(html, 'html.parser')
+        df = find_russell_table(soup)
+
+        assert list(df['Symbol']) == ['AAPL', 'AMZN', 'MSFT']
+
 
 class TestProcessDataframe:
     """Tests for process_dataframe function."""
@@ -151,16 +193,26 @@ class TestValidateData:
 
     def test_validate_data_success(self):
         """Test validation with sufficient data."""
-        df = pd.DataFrame({'Company': ['Company' + str(i) for i in range(150)]})
+        df = pd.DataFrame({
+            'Company': ['Company' + str(i) for i in range(150)],
+            'Symbol': ['SYM' + str(i) for i in range(150)]
+        })
 
         # Should not raise any exception
         validate_data(df)
 
     def test_validate_data_too_few_companies(self):
         """Test validation fails with too few companies."""
-        df = pd.DataFrame({'Company': ['Apple', 'Microsoft']})
+        df = pd.DataFrame({'Company': ['Apple', 'Microsoft'], 'Symbol': ['AAPL', 'MSFT']})
 
         with pytest.raises(ValueError, match="suspiciously low"):
+            validate_data(df)
+
+    def test_validate_data_missing_symbol_column(self):
+        """Test validation fails when the table has no Symbol column."""
+        df = pd.DataFrame({'Year': list(range(150))})
+
+        with pytest.raises(ValueError, match="No 'Symbol' column"):
             validate_data(df)
 
 
