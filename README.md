@@ -2,7 +2,7 @@
 
 Dieses Repository enthält einen Python-Scraper, der die Liste der im **Russell 1000 Index** enthaltenen Unternehmen extrahiert.
 
-**Datenquelle:** [Wikipedia - Russell 1000 Index](https://en.wikipedia.org/wiki/Russell_1000_Index)
+**Datenquelle:** [Wikipedia - List of Russell 1000 companies](https://en.wikipedia.org/wiki/List_of_Russell_1000_companies)
 
 ---
 
