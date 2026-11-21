@@ -187,6 +187,21 @@ class TestProcessDataframe:
         assert 'GICS_Sector' in result.columns
         assert 'GICS_Sub_Industry' in result.columns
 
+    def test_process_dataframe_drops_rows_without_symbol(self):
+        """Blank rows (e.g. table footers) must not end up in the export."""
+        df = pd.DataFrame({
+            'Company': ['Apple Inc.', None, 'Microsoft Corp', 'Blank'],
+            'Symbol': [' AAPL ', None, 'MSFT', '  '],
+            'GICS Sector': ['Technology', None, 'Technology', None],
+            'GICS Sub-Industry': ['Computers', None, 'Software', None]
+        })
+
+        result = process_dataframe(df)
+
+        assert list(result['Symbol']) == ['AAPL', 'MSFT']
+        assert list(result['Company']) == ['Apple Inc.', 'Microsoft Corp']
+        assert result.index.tolist() == [0, 1]
+
 
 class TestValidateData:
     """Tests for validate_data function."""

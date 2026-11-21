@@ -86,7 +86,17 @@ def process_dataframe(df):
 
     logging.info(f"Column mapping: {column_mapping}")
     df.rename(columns=column_mapping, inplace=True)
-    
+
+    # Drop rows without a symbol (e.g. blank footer rows in the source table),
+    # which otherwise end up as ",,," in the CSV and all-null records in the JSON.
+    if 'Symbol' in df.columns:
+        df['Symbol'] = df['Symbol'].astype('string').str.strip()
+        before = len(df)
+        df = df[df['Symbol'].notna() & (df['Symbol'] != '')].reset_index(drop=True)
+        df['Symbol'] = df['Symbol'].astype(object)
+        if len(df) != before:
+            logging.info(f"Dropped {before - len(df)} row(s) without a symbol")
+
     return df
 
 
