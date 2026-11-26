@@ -187,6 +187,19 @@ class TestProcessDataframe:
         assert 'GICS_Sector' in result.columns
         assert 'GICS_Sub_Industry' in result.columns
 
+    def test_process_dataframe_drops_rows_without_symbol(self):
+        """Blank rows (no symbol) from the source table are removed."""
+        df = pd.DataFrame({
+            'Company': ['Apple Inc.', None, 'Zscaler', ''],
+            'Symbol': ['AAPL', None, 'ZS', '  '],
+            'GICS Sector': ['Technology', None, 'Technology', ''],
+        })
+
+        result = process_dataframe(df)
+
+        assert list(result['Symbol']) == ['AAPL', 'ZS']
+        assert list(result.index) == [0, 1]
+
 
 class TestValidateData:
     """Tests for validate_data function."""

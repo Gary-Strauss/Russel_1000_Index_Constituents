@@ -86,7 +86,17 @@ def process_dataframe(df):
 
     logging.info(f"Column mapping: {column_mapping}")
     df.rename(columns=column_mapping, inplace=True)
-    
+
+    # Drop rows without a symbol (e.g. blank spacer/footer rows in the source
+    # table) so they don't end up as empty records in the exports.
+    if 'Symbol' in df.columns:
+        symbols = df['Symbol'].astype('string').str.strip()
+        mask = symbols.notna() & (symbols != '')
+        dropped = int((~mask).sum())
+        if dropped:
+            logging.warning(f"Dropping {dropped} row(s) without a symbol")
+        df = df[mask].reset_index(drop=True)
+
     return df
 
 
